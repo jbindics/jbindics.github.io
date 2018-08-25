@@ -4,7 +4,7 @@ let Content = true;
 fb.ref("Posts").once('value').then(data => {
     let Posts = data.val();
     Posts.forEach(post => {
-        $('#oldPosts').append('<h4>' + post.title + '</h4>' + '<p>' + post.content + '<p>');
+        $('#oldPosts').append('<h4>' + post.title + '</h4>' + '<p>' + post.content + '<br>_______________________________<p>');
     })
 });
 
