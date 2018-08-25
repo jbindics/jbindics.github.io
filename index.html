@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>THE BLOG of my...</h1>
+    </header>
+    <h2>Add new post</h2>
+    <div class="div_a">
+        Title: <br>
+        <input id="PostTitle" type="text" name="" placeholder="Title..."><br> Cotent: <br>
+        <textarea id="PostText" class="PostContent" placeholder="Type your post here..." with="600px"></textarea> <br>
+        <button id="submit">Save post...</button>
+        <h3><br>Older Posts</h3>
+        <div class="div_b">
+            <p id="oldPosts"></p>
+
+        </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+
+        var config = {
+            apiKey: "AIzaSyCeCQyjmNqNLrFmKKf2Di9OlkWVXRJ0GF4",
+            authDomain: "greenfoxsc.firebaseapp.com",
+            databaseURL: "https://greenfoxsc.firebaseio.com",
+            projectId: "greenfoxsc",
+            storageBucket: "greenfoxsc.appspot.com",
+            messagingSenderId: "698315509949"
+        };
+        firebase.initializeApp(config);
+        fb = firebase.database();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+
+
+</body>
+
+</html>
